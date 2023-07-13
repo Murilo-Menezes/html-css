@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "classica";
+    src: url(fontes/pokemon1.ttf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "sem-preenchimento";
+    src: url(fontes/Pokemon\ Hollow.ttf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "preenchida";
+    src: url(fontes/Pokemon\ Solid.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor1:#FB544B;
+    --cor2:#FB544B;
+    --cor3:#CCC8C7;
+    --cor4:#a8140c;
+    --cor5:#7A0600;
+
+    --fonte-classica:'classica','cursive';
+    --fonte-preenchida: 'preenchida','cursive';
+    --fonte-sem-preenchimento: 'sem-preenchimento','cursive';
+
+}
+
+
+
+/* a tag a baixo serve para colocar parametros globais no codigo*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--cor1);
+    
+}
+
+header{
+    background-image:linear-gradient(to bottom,var(--cor5), var(--cor1));
+    height: 150px;
+    padding-top: 40px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 4em;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family:var(--fonte-preenchida);
+    color:white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.753);
+    letter-spacing: 4px; /* tag serve para afastar as letras uma das outras*/
+}
+
+header p{
+    text-align: center;
+    margin: auto;
+    color: white;
+    max-width: 1000px;
+    font-family: var(--fonte-classica);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.644);
+}
+
+nav{
+    text-align: center;
+    background-color: var(--cor1);
+    margin-top: 80px;
+    padding-left: 15px;
+}
+
+nav a{
+    font-family: var(--fonte-classica);
+    color: var(--cor5);
+    font-size: 1em;
+    padding: 10px;
+    margin: 5px 5px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--cor4);
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+main{
+    min-width: 500px;
+    max-width: 1920px;
+    
+}
+
+main h1{
+    text-align: center;
+    font-family: var(--fonte-classica);
+    font-size: 2em;
+    padding: 10px 20px;
+    color: var(--cor5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.644);
+}
+
+main p{
+    font-family: var(--fonte-classica);
+    padding: 5px 20px;
+    font-size: 1.3em;
+    color:black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.295);
+}
+
+main img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+table{
+    border-top-right-radius: 15px;
+    border-top-left-radius:  15px;
+    border: 10px solid var(--cor4);
+    margin: auto;
+    background-color: var(--cor3);
+    border-spacing: 0px
+}
+
+.topo-tabela{
+    text-align: center;
+    margin: 10px 20px;
+    font-family: var(--fonte-classica);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color:black;
+    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.199);
+    
+}
+
+.coluna{
+    text-align: center;
+    margin: auto;
+    font-family: var(--fonte-classica);
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.322);
+}
+
+th,tr,td{
+    border: 3px solid var(--cor4);
+}

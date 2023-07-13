@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+	
+function mostra(frase) {
+
+	document.write(frase);
+	pulaLinha();
+}
+
+function pulaLinha() {
+
+	document.write("<br>");
+	document.write("<br>");
+}
+
+mostra("<h1>" + "Acerte o Numero Pensado" + "</h1>");
+
+var numeroPensado = Math.round(Math.random() * 10 );
+
+var vidas = 1
+
+while(vidas <= 3){
+
+	var chute = parseInt(prompt("Dê seu Palpite"));
+	
+	if (chute == numeroPensado) {
+
+	mostra("Parabéns, você acertou!");
+	break;
+} else {
+
+	mostra("Poxa vida, você errou!");
+}
+ 	vidas++;
+}
+
+
+
+
+
+</script>
